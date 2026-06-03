@@ -13,7 +13,7 @@ The system combines two core ideas:
 1. **Two-stage curriculum learning** via LoRA — train on simple arithmetic first, then complex reasoning.
 2. **Ensemble decoding** — generate 20 stochastic samples per question, remove outliers with IQR, and aggregate answers by majority vote.
 
-**Final validation score: 1,801 / 10,000 (18.01%)**
+**Final validation score: 2027 / 10,000 (20.27%)**
 
 ---
 
@@ -35,7 +35,7 @@ The system combines two core ideas:
 | Single-stage LoRA + greedy | 802 | 0.802 |
 | LoRA + Curriculum + greedy | 831 | 0.831 |
 | LoRA + Curriculum (Freeze) + Ensemble | 1,782 | 1.782 |
-| **Final (Freeze + Ensemble + Post-correct)** | **1,801** | **1.801** |
+| **Final (Freeze + Ensemble + Post-correct)** | **20,27** | **2.027** |
 
 ---
 
